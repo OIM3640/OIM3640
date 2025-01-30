@@ -30,3 +30,8 @@ print(greeting)
 
 greeting = "Hello, " + name
 print(greeting)
+
+
+
+
+print(f'Hi, my name is {name:>8}.')
