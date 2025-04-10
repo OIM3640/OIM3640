@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 APIKEY = os.getenv("OPENWEATHER_API_KEY")
 
-def get_temp():
-    city = "Wellesley"
+
+def get_temp(city):
+    city = city.replace(' ', '%20')
     country_code = "us"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city},{country_code}&APPID={APIKEY}&units=imperial"
 
@@ -19,8 +20,10 @@ def get_temp():
         weather_data = json.loads(response_text)
 
     # print(weather_data)
-    return weather_data['main']['temp']
+    return weather_data["main"]["temp"]
 
 
-if __name__ == '__main__':
-    print(get_temp())
+if __name__ == "__main__":
+    print(get_temp("Wellesley"))
+    print(get_temp("Miami"))
+    print(get_temp("New York"))
