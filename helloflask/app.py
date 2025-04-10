@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from weather import get_temp
 
 app = Flask(__name__)
 
@@ -24,10 +25,12 @@ def square(number=None):
     return "No number provided."
 
 
-@app.route('/weather')
+
 @app.route('/weather/<city>')
-def get_temp(city=None):
-    pass
+def show_temp(city=None):
+    temp = get_temp()
+    return f'{temp}F'
+    
 
 if __name__ == "__main__":
     app.run(debug=True)
