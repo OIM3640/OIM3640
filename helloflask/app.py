@@ -89,7 +89,7 @@ def post_weather():
 """
 Student registration example
 """
-COURSES = ['Excel', 'Web', 'Tax']
+COURSES = ["Excel", "Web", "Tax"]
 registration = {}  # {'Aryan': 'Web', 'Sol': 'Tax'}
 
 
@@ -105,7 +105,7 @@ def register_course():
     course = request.form.get("course")
     # some validation
     if course not in COURSES:
-        return f'Get out of here, hacker {name}!'
+        return f"Get out of here, hacker {name}!"
     registration[name] = course
     # return "Successfully registered!"
     return redirect("/enrollments")
@@ -114,6 +114,20 @@ def register_course():
 @app.route("/enrollments")
 def show_enrollments():
     return render_template("enrollments.html", students=registration)
+
+
+"""
+Embedding a Google Map
+"""
+
+
+@app.route("/map")
+def map():
+    # You can pass coordinates dynamically too
+    # Babson Horn Library: 42.29831180710792, -71.26622896920433
+    latitude = 42.29831180710792
+    longitude = -71.26622896920433
+    return render_template("map.html", latitude=latitude, longitude=longitude)
 
 
 if __name__ == "__main__":
