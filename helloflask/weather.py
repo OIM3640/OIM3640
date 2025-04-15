@@ -9,7 +9,8 @@ APIKEY = os.getenv("OPENWEATHER_API_KEY")
 
 
 def get_temp(city):
-    city = city.replace(' ', '%20')
+    """"""
+    city = city.replace(" ", "%20")
     country_code = "us"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city},{country_code}&APPID={APIKEY}&units=imperial"
 
