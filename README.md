@@ -1,4 +1,4 @@
 # OIM3640
-This is a repository for OIM3640 of 2025 Fall.
+This repository contains Python scripts and Jupyter notebooks for the OIM3640 course (Fall 2025).
 
 My name is Zhi Li. I am excited to learn Python.
