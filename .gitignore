@@ -183,5 +183,4 @@ cython_debug/
 
 # anaconda
 anaconda_projects/
-anaconda_projects_db/
 .virtual_documents/
