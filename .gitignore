@@ -184,3 +184,6 @@ cython_debug/
 # anaconda
 anaconda_projects/
 .virtual_documents/
+
+# Quiz
+*/quiz*.py
