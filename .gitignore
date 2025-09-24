@@ -186,4 +186,4 @@ anaconda_projects/
 .virtual_documents/
 
 # Quiz
-*/quiz*.py
+**/quiz*.py
