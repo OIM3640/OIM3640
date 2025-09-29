@@ -69,7 +69,10 @@ for item in (10, 20, 30):
 # break: immediately exits the entire loop
 # continue: skips the rest of the current iteration and moves to the next one.
 
+print("Start of loop")
 for i in range(1, 10):
     if i % 3 == 0:
         continue
     print(i)
+
+print("Loop ended")
