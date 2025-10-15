@@ -1,7 +1,7 @@
 """
 You've been hired as a cybersecurity analyst for a major e-commerce platform, and your primary task is to improve the security of user accounts by identifying strong passwords and eliminating weak ones.
 
-Recently, your team has received reports of user accounts being compromised due to weak, easily guessable passwords. After conducting a security audit, you have identified a list of commonly used passwords stored in a file called "common_passwords.txt", which you can access and download through a link (the link to this file will be provided later in the coding part of this quiz.)
+Recently, your team has received reports of user accounts being compromised due to weak, easily guessable passwords. After conducting a security audit, you have identified a list of commonly used passwords stored in a file called "common_passwords.txt", which you can access and download through a link (https://bit.ly/python-quiz-3)
 
 The passwords in the file look like this:
 
