@@ -29,6 +29,29 @@ for line in f: # Iterate through each line, where each line contains one passwor
 """
 
 
+def contains_uppercase(s):
+    """Return True if ..."""
+    for c in s:
+        if c.isupper():
+            return True
+    return False
+
+
+def contains_upper_lower_digit(s):
+    """Return True if ..."""
+    upper_flag = False
+    lower_flag = False
+    digit_flag = False
+    for c in s:
+        if c.isupper():
+            upper_flag = True
+        elif c.islower():
+            lower_flag = True
+        elif c.isdigit():
+            digit_flag = True
+    return upper_flag and lower_flag and digit_flag
+
+
 def find_strong_passwords():
     """
     find strong passwords and return them as a list
@@ -39,9 +62,12 @@ def find_strong_passwords():
         # print(line)
         password = line.strip()
         # print(password)
-        if len(password) > 12:
-            strong_password_list.append(password)
-
+        if len(password) > 12 and contains_uppercase(password):
+            # Check for two consecutive identical characters
+            if not any(
+                password[i] == password[i + 1] for i in range(len(password) - 1)
+            ):
+                strong_password_list.append(password)
     return strong_password_list
 
 
