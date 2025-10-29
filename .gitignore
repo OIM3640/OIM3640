@@ -187,3 +187,8 @@ anaconda_projects/
 
 # Quiz
 **/quiz*.py
+
+
+
+
+.env
