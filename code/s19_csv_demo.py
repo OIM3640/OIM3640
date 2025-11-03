@@ -1,6 +1,6 @@
 def read_csv(filepath):
     """
-    TODO: Read a CSV file and return the data in best format
+    TODO: Read a CSV file and return the data in best format using csv module.
     """
     with open(filepath, "r", encoding="utf8") as file:
         # data = file.read()  # read the file as one big string
@@ -17,7 +17,7 @@ def process_data(data):
 
 
 def main():
-    file = "data/portfolio.csv"
+    file = "data/portfolio.csv"  # https://github.com/OIM3640/resources/blob/main/code/data/portfolio.csv
     data = read_csv(file)
     # process_data(data)
 
