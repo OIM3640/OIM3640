@@ -89,7 +89,7 @@ def main():
     # This text file is downloaded from gutenberg.org (https://www.gutenberg.org/cache/epub/1342/pg1342.txt)
     hist = process_file("data/Pride and Prejudice.txt", skip_header=True)
 
-    # print(hist)
+    print(hist)
     # print(f"Total number of words: {total_words(hist)}")
     # print(f"Number of different words: {different_words(hist)}")
 
