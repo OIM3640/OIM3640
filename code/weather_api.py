@@ -22,3 +22,5 @@ with urllib.request.urlopen(url) as response:
 print(weather_data)
 
 # How do we get current temperature?
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Result</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: #f0f8ff;
+                text-align: center;
+            }
+            h1 {
+                color: #2c3e50;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 1.2em;
+                line-height: 1.6;
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .temperature {
+                color: #e74c3c;
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Weather Result</h1>
+        <p>
+            The current temperature in <strong>{{ city }}</strong> is
+            <span class="temperature">{{ temperature }}°F</span>.
+        </p>
+    </body>
+</html>
