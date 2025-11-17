@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is my homepage</title>
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        h2 {
+            color: blue;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        img {
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my homepage!</h1>
+    <nav style="background-color: #333; padding: 15px; text-align: center; border-radius: 5px; margin-bottom: 20px;"></nav>
+      <a href="{{ url_for('hello') }}" style="color: white; text-decoration: none; padding: 10px 20px; margin: 0 5px; display: inline-block; background-color: #555; border-radius: 3px; transition: background-color 0.3s;">Hello</a>
+      <a href="{{ url_for('square') }}" style="color: white; text-decoration: none; padding: 10px 20px; margin: 0 5px; display: inline-block; background-color: #555; border-radius: 3px; transition: background-color 0.3s;">Square</a>
+      <a href="{{ url_for('weather_with_city') }}" style="color: white; text-decoration: none; padding: 10px 20px; margin: 0 5px; display: inline-block; background-color: #555; border-radius: 3px; transition: background-color 0.3s;">Weather</a>
+    </nav>
+    <h2>Smaller Heading</h2>
+    <p>
+      This is a simple <strong>HTML</strong> page. I am learning it at
+      <a href="https://www.babson.edu">Babson</a>.
+    </p>
+    <div>
+      <img src="images/cat.jpg" alt="" height="200" />
+    </div>
+
+    <p>Feel free to explore and learn more about <strong>HTML</strong>!</p>
+    <img
+      src="https://www.babson.edu/media/babson/assets/homepage-images/WSJ_No2Again.jpg"
+      alt=""
+      height="200"
+    />
+
+    <h1>Another H1</h1>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <ol>
+      <li>OIM 3640 - Problem Solving and Software Design</li>
+      <li>FME 1000 - Foundations of Management and Entrepreneurship</li>
+      <li>QTM 2100 - Business Statistics</li>
+      <li>ACC 2100 - Financial Accounting</li>
+      <li>MKT 2200 - Marketing</li>
+    </ol>
+  </body>
+</html>
